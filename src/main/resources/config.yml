@@ -1,0 +1,44 @@
+settings:
+  command: 'pex user {player} group set {group}'
+  cooldown: 600 # кулдаун перед следующей выдачей группы, в секундах
+  help:
+  - §r
+  - §b§l NaseGranter §7» §fПомощь по командам
+  - §r
+  - §b /тgrant give [ник] [группа] §f- выдать донат
+  - §b /ngrant fix [ник] §f- сбросить игроку лимиты на выдачу привилегий
+  - §8Разработчик плагина - §cvk.com/nasedev
+  titles:
+    enabled: true # отправлять ли тайтлы
+    title: §e{0} выдал игроку {1} # текст верхней строки
+    subtitle: §fдонат {2} # текст нижней строки
+    fadeIn: 20 # время появление тайтла, в тиках (1 сек. = 20 тиков)
+    stay: 40 # время показа тайтла, в тиках (1 сек. = 20 тиков)
+    fadeOut: 20 # время исчезновения тайтла, в тиках (1 сек. = 20 тиков)
+groups_names: # названия групп
+  default: '§7[Игрок]'
+  Vip: '§b[VIP]'
+  Mvp: '§a[MVP]'
+  Permium: '§e[Премиум]'
+  Moder: '§d[Модер]'
+  Admin: '§c[Админ]'
+  Developer: '§6[Разработчик]'
+  Owner: '§4[Владелец]'
+priorities: # приоритеты групп (обязательно должна быть default, даже если у вас нет такой группы)
+  default: 0
+  Vip: 1
+  Mvp: 2
+  Premium: 3
+  Moder: 4
+  Admin: 5
+  Developer: 6
+  Owner: 7
+limits: # лимиты на выдачу групп
+  Developer:
+    Vip: 4
+    Mvp: 3
+    Premium: 2
+  Owner:
+    Vip: 7
+    Mvp: 6
+    Permium: 5

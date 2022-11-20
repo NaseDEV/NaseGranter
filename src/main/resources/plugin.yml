@@ -1,0 +1,10 @@
+name: NaseGranter
+version: '${project.version}'
+main: ru.nase.nasegranter.Main
+depend: [ Vault ]
+softdepend: [ ProtocolLib ]
+authors: [ nase ]
+description: Granter by Nase
+commands:
+  grant:
+    aliases: [ngrant, granter, ngranter]
